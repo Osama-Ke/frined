@@ -21,14 +21,11 @@ class _LogInState extends State<LogIn> {
           height: context.height(),
           child: Stack(
             children: [
-              Image(
-                image: const AssetImage(
-                  "lib/core/asesst/image/Log in.png",
-                ),
-                height: MediaQuery.of(context).size.height,
-                width: MediaQuery.of(context).size.width,
-                fit: BoxFit.fill,
-              ),
+             Assets.image.logIn.image(
+               height: MediaQuery.of(context).size.height,
+               width: MediaQuery.of(context).size.width,
+               fit: BoxFit.fill,
+             ),
               Padding(
                 padding: const EdgeInsets.only(top: 90, left: 60),
                 child: Text(
